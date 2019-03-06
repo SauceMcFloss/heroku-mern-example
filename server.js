@@ -17,7 +17,7 @@ app.use(routes);
 mongoose.Promise = global.Promise;
 // Connect to the Mongo DB
 mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost/reactreadinglist",
+  process.env.MONGODB_URI || "mongodb://admin:pass@testmerncluster-shard-00-00-eymo3.mongodb.net:27017,testmerncluster-shard-00-01-eymo3.mongodb.net:27017,testmerncluster-shard-00-02-eymo3.mongodb.net:27017/test?ssl=true&replicaSet=TestMERNCluster-shard-0&authSource=admin&retryWrites=true",
   {
     useMongoClient: true
   }
